@@ -1,0 +1,1605 @@
+Submit Your Project
+Submit with your agent
+
+Connect DevRelay to your coding agent, open your project, and paste this prompt.
+
+
+Copy prompt
+Show the prompt
+Project Details
+Project name *
+Tell us the name of your hack
+Source code *
+GitHub repo for your project!
+Works with
+github.com
+gitlab.com
+bitbucket.org
+
+Write
+Preview
+
+
+
+
+
+
+
+Description *
+Tell us more about your project
+
+Markdown:
+**bold**
+_italic_
+[link](https://…)
+- list item
+1. numbered
+`code`
+
+Technologies Used *
+Tell us what technologies you used to build your hack
+AI your project calls
+Tick the AI your app sends prompts to while people use it, like a chatbot, summarizer, image generator or voice feature. They're added to your technologies above.
+
+
+Gemini
+
+
+OpenAI
+
+
+Claude
+
+
+ElevenLabs
+
+
+Gemma
+
+
+Hugging Face
+
+
+Ollama
+
+
+OpenRouter
+
+
+Llama
+
+
+DeepSeek
+
+
+Grok
+
+
+Mistral
+
+Live demo link
+We'd love to see a video of your demo if you have one!
+Other links
+
+A second repo, another demo or video, your slides: anything else judges should open.
+
+Add a link
+Which prize categories are you entering? *
+Prize Categories
+0 selected
+Pick every category your project qualifies for. Judges for each category review it separately.
+
+Deepmind Google
+Best Use of Gemma 4
+It’s time to see how much you can build with a lightweight, open model. Gemma 4 packs multimodal intelligence into an open-weights model that you can access through the Gemini API. So, what can Gemma 4 bring to your project?
+
+Multimodal Experience: Work with text and images to create an assistant that understands more of what users share.
+Focused AI Tools: Build a focused AI tool for learning, creativity, productivity, or your community.
+Rapid Prototyping: Experiment with an open model while using the Gemini API to move quickly from an idea to a working prototype.
+Bring your idea to life… what will you build with Gemma 4 today?
+
+
+DigitalOcean
+Best Open-Source AI Project
+Exclusive Hacktoberfest 2026 Winner DEV Badge & MLH Swag Bag
+Build an original project that uses open-source or open-weight AI as an important part of how it works. Teams could create an agent skill, build with an open-weight large or small language model, or build or adapt an open-source model harness.
+
+
+M
+Maritime (YC F26)
+Best Use of Maritime
+$1000 of Maritime Credits
+It’s time to see how far you can push autonomous infrastructure. Maritime (YC F26) puts intelligent, agentic hosting at your fingertips to handle dynamic deployment, auto-scaling, and self-healing backends. So, what can Maritime’s hosting agents bring to your project?
+
+Autonomous Operations: Build self-healing systems that automatically isolate faults, remediate bugs, and adjust resources in real time.
+
+Agentic Workflows: Create innovative applications that allow hosting agents to dynamically reconfigure architecture and route traffic on the fly.
+
+Rapid Prototyping: Experiment with multi-agent orchestration to move seamlessly from a bold concept to a working prototype.
+
+Bring your vision to life… what will you build with Maritime today?
+# BUILD: CODE ZERO
+## AI-Powered GitHub Regression Investigation & Code Infection Analysis Platform
+
+You are an elite full-stack TypeScript engineer, AI systems architect, and award-winning product designer.
+
+Build a complete, production-quality, visually exceptional web application called **CODE ZERO**.
+
+**Tagline:** "Find Patient Zero in Your Codebase."
+
+### THE VISION
+
+CODE ZERO is an AI-powered GitHub repository investigation platform that treats software regressions like infections spreading through a biological system.
+
+Every repository is a patient. Every commit is a potential mutation. Every regression is an infection. Every affected function is part of the infection's potential spread.
+
+The platform allows developers to import GitHub repositories, travel through commit history, investigate suspicious changes, visualize dependency propagation, identify potential regression origins, compare working and broken versions, receive Gemma 4-powered explanations, generate fixes, and export investigation reports.
+
+The result should feel like an advanced biomedical research laboratory combined with a sophisticated developer intelligence platform.
+
+This is NOT a generic chatbot, basic GitHub dashboard, or static concept website.
+
+Build a functional, interconnected application with real data, meaningful analysis, and an extraordinary user experience.
+
+---
+
+# 1. TECHNOLOGY STACK
+
+Use TypeScript throughout the application.
+
+### Frontend
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Lucide React
+- Framer Motion / Motion
+- React Flow (`@xyflow/react`)
+- Monaco Editor
+- Recharts
+- TanStack Query
+- Zustand for global application state
+- React Router
+- Sonner for toast notifications
+
+### Backend
+- Node.js + TypeScript
+- Fastify or Express
+- GitHub REST API using Octokit
+- Git analysis using simple-git where local repository access is needed
+- TypeScript-based parsing and dependency analysis
+- Gemma 4 integration through Ollama
+- Zod for request and response validation
+- SQLite for persistence
+- Server-Sent Events for streaming analysis progress
+
+### Architecture
+Use a monorepo:
+
+```text
+code-zero/
+├── apps/
+│   ├── web/
+│   └── api/
+├── packages/
+│   ├── shared/
+│   └── analysis/
+├── demo/
+├── docs/
+├── README.md
+├── .env.example
+└── package.json
+```
+
+Use shared TypeScript types and schemas.
+
+Never expose GitHub tokens or AI service credentials to the browser.
+
+All GitHub API calls, model inference, and repository processing must happen through the backend.
+
+---
+
+# 2. VISUAL IDENTITY — BIOMEDICAL CYBER LAB
+
+Create a distinctive interface inspired by:
+
+- Advanced medical diagnostic systems
+- Bioinformatics laboratories
+- Pathogen propagation simulations
+- DNA sequencing interfaces
+- Futuristic medical research workstations
+- Scientific visualization software
+
+The interface must look sophisticated, cinematic, and technically credible.
+
+Avoid generic SaaS templates.
+
+### Color palette
+
+Background:
+- Deep obsidian: `#050B10`
+- Laboratory navy: `#0A1620`
+- Panel background: `#101E29`
+
+Primary accents:
+- Biohazard green: `#8BFFB0`
+- Medical cyan: `#40E0D0`
+- Electric teal: `#00C9A7`
+
+Diagnostic states:
+- Healthy: `#39D98A`
+- Warning: `#FFCB6B`
+- Critical: `#FF5C7A`
+- Unknown: `#8C9BA8`
+
+Text:
+- Primary: `#EDF7F5`
+- Secondary: `#9FB4BE`
+
+### Typography
+
+Use:
+- Space Grotesk for headings
+- Inter for interface text
+- JetBrains Mono for code, hashes, and technical metadata
+
+### Design requirements
+
+- Dark-first interface
+- Subtle glass-like panels
+- Thin scientific grid backgrounds
+- Glowing graph connections
+- Diagnostic status indicators
+- Smooth page transitions
+- Animated loading states
+- Professional spacing and typography
+- Consistent component hierarchy
+- Responsive layouts
+- Accessible contrast
+- Keyboard navigation
+- Reduced-motion support
+
+Use subtle animations that improve comprehension.
+
+Avoid excessive particle effects, heavy 3D rendering, or animations that interfere with usability.
+
+### Thematic terminology
+
+Use the biomedical theme consistently while preserving technical clarity.
+
+| Product terminology | Technical meaning |
+|---|---|
+| Patient | GitHub repository |
+| Mutation | Commit or code change |
+| Patient Zero | Suspected regression-introducing commit |
+| Infection | Potential software regression |
+| Infection Map | Dependency and impact graph |
+| Symptoms | Error messages or failing tests |
+| Diagnosis | AI-generated root-cause hypothesis |
+| DNA Comparison | Code diff |
+| Treatment | Proposed code fix |
+| Recovery | Validated fix or rollback |
+| Medical Record | Investigation report |
+| Health Monitor | Repository health dashboard |
+
+Never sacrifice clarity for themed language.
+
+For example, display:
+
+**PATIENT ZERO — Suspected Regression Commit**
+
+rather than only:
+
+**PATIENT ZERO**
+
+Use real software engineering terminology in subtitles and tooltips.
+
+---
+
+# 3. APPLICATION SHELL & NAVIGATION
+
+Create a polished application shell with:
+
+### Left sidebar
+
+**OVERVIEW**
+- Mission Control
+- Time Portal
+
+**DIAGNOSTICS**
+- Temporal Timeline
+- Breakage Detector
+- Timeline Divergence
+- Infection Map
+- Gemma Intelligence
+
+**TREATMENT**
+- Restore Lab
+- Investigation Reports
+
+**MONITORING**
+- Repository Health
+- Saved Investigations
+
+**SYSTEM**
+- Settings
+- Documentation
+
+### Global header
+
+Include:
+- Current repository name
+- Branch selector
+- Current investigation status
+- Global search
+- Command palette trigger
+- Notification center
+- Gemma connection status
+- User-accessible settings
+
+### Global behavior
+
+The selected repository, commit range, investigation, and selected commit must remain synchronized across all modules.
+
+Clicking a commit anywhere should update the relevant contextual panels.
+
+Use reusable layouts and shared components.
+
+Support browser navigation and deep links.
+
+---
+
+# 4. MODULE ONE — MISSION CONTROL
+
+Create a comprehensive repository overview dashboard.
+
+### Repository identity panel
+
+Display:
+- Repository name
+- Owner
+- Description
+- Primary language
+- Stars
+- Forks
+- Default branch
+- Latest commit
+- Contributors
+- GitHub repository link
+
+### Diagnostic metric cards
+
+Display:
+1. Total commits analyzed
+2. Suspicious commits
+3. Files modified
+4. Potentially affected functions
+5. Overall heuristic risk score
+6. AI analysis status
+7. Test verification status
+8. Repository health indicators
+
+Metrics must be calculated from actual data.
+
+Do not invent statistics.
+
+### Diagnostic overview
+
+Include:
+- Commit activity chart
+- Risk distribution chart
+- Most frequently changed files
+- Top suspicious commits
+- Recent analysis activity
+- Investigation progress
+- Repository health summary
+
+### Quick actions
+
+Implement functional actions:
+- Start Investigation
+- Explore Timeline
+- Compare Commits
+- View Infection Map
+- Ask Gemma
+- Generate Report
+
+### Analysis progress
+
+Show a pipeline:
+
+IMPORT → PARSE → COMPARE → DETECT → DIAGNOSE → REPORT
+
+Display actual progress and error states.
+
+### Recent investigations
+
+Show saved investigations with:
+- Repository
+- Date
+- Commit range
+- Status
+- Risk summary
+- Open investigation action
+
+---
+
+# 5. MODULE TWO — TIME PORTAL
+
+Create a repository import and investigation configuration interface.
+
+### Repository import
+
+Accept:
+- Public GitHub repository URL
+- `owner/repository` format
+
+Validate input.
+
+Retrieve repository metadata using GitHub APIs.
+
+Support:
+- Branch selection
+- Commit selection
+- Date range
+- Commit count limit
+- Comparison baseline
+
+### Investigation modes
+
+Implement five modes:
+
+**Quick Scan**
+Analyze the latest 10–20 commits.
+
+**Regression Hunt**
+Accept a known working commit and a known broken commit.
+
+**Single Commit Investigation**
+Analyze one selected commit.
+
+**Repository Exploration**
+Browse history without assuming a regression exists.
+
+**AI-Guided Investigation**
+Accept a natural-language bug description or error message and use it to prioritize investigation.
+
+### Import progress
+
+Display:
+- Connecting to GitHub
+- Fetching metadata
+- Retrieving commits
+- Loading diffs
+- Parsing changed files
+- Building dependency relationships
+- Calculating risk signals
+- Preparing AI context
+
+Handle invalid URLs, missing repositories, inaccessible commits, rate limits, and network failures.
+
+### Demo mode
+
+Include a built-in demonstration repository with a deliberately introduced regression.
+
+The demo must work without GitHub connectivity.
+
+Provide realistic, internally consistent commit metadata, diffs, risk scores, and dependency relationships.
+
+Clearly label demo data as simulated.
+
+---
+
+# 6. MODULE THREE — TEMPORAL TIMELINE
+
+Build a visually impressive interactive commit timeline.
+
+### Commit nodes
+
+Each node should display:
+- Short SHA
+- Commit message
+- Author
+- Timestamp
+- Files changed
+- Additions/deletions
+- Risk score
+- Investigation status
+
+Use visual states for:
+- Normal
+- Selected
+- Suspicious
+- Known good
+- Known bad
+- Verified regression
+
+### Interactions
+
+Implement:
+- Zoom
+- Pan
+- Hover details
+- Click-to-inspect
+- Search commits
+- Filter by author
+- Filter by date
+- Filter by file
+- Filter by risk
+- Select two commits for comparison
+- Bookmark commits
+
+### Timeline playback
+
+Add:
+- Play
+- Pause
+- Previous
+- Next
+- Playback speed
+- Timeline scrubber
+- Reset
+
+Animate progression through commits.
+
+Synchronize the selected commit with the details panel and other modules.
+
+### Code Change Trail
+
+For a selected file, show its evolution across commits.
+
+Display:
+- Creation
+- Modification
+- Renaming when detectable
+- Deletion
+- Relevant commit references
+
+### Commit details drawer
+
+Include:
+- Commit metadata
+- Changed files
+- Diff statistics
+- Risk factors
+- Related findings
+- View Diff
+- Analyze with Gemma
+- View Impact
+- Bookmark
+
+---
+
+# 7. MODULE FOUR — BREAKAGE DETECTOR
+
+Build the central regression analysis engine.
+
+This module must combine deterministic analysis with Gemma-powered reasoning.
+
+### Deterministic analysis
+
+Analyze:
+- Changed files
+- Added and removed lines
+- Modified functions
+- Changed imports
+- Dependency manifest changes
+- Configuration modifications
+- Removed validation
+- Changed exception handling
+- Test file modifications
+- Potentially dangerous control-flow changes
+
+Use TypeScript-compatible parsing libraries.
+
+Prioritize TypeScript and JavaScript analysis.
+
+Use AST parsing where possible.
+
+Clearly label any heuristic-only detection.
+
+### Risk scoring
+
+Calculate a transparent score from 0–100.
+
+Example signals:
+- Critical function modifications
+- Removed validation
+- Error-handling changes
+- Dependency modifications
+- Large diffs
+- Configuration changes
+- Missing related tests
+
+Store each contributing signal.
+
+Never present the score as a calibrated probability of failure.
+
+### Patient Zero detection
+
+Rank suspicious commits.
+
+Display:
+- Suspected commit
+- Risk score
+- Relevant files
+- Risk factors
+- AI diagnosis
+- Supporting evidence
+- Suggested verification steps
+
+### Suspicious commit leaderboard
+
+Show the top five candidates.
+
+Allow users to:
+- Inspect evidence
+- Open diff
+- View impact
+- Ask Gemma
+- Generate tests
+- Compare against a known good version
+
+### Verification
+
+Provide an interface for test verification.
+
+For the MVP, implement deterministic verification for the controlled demo repository.
+
+If general test execution is implemented, run only in isolated, resource-limited containers with explicit user authorization.
+
+Never execute arbitrary repository code directly in the application server.
+
+Distinguish:
+- Suspected regression
+- Test-confirmed behavioral change
+- Unverified hypothesis
+- Insufficient evidence
+
+---
+
+# 8. MODULE FIVE — TIMELINE DIVERGENCE
+
+Create an advanced code comparison workspace.
+
+### Layout
+
+Two synchronized code panels:
+
+LEFT: Known working version
+
+RIGHT: Suspected broken version
+
+Use Monaco Editor.
+
+### Comparison features
+
+Implement:
+- Syntax highlighting
+- Line numbers
+- Added-line highlighting
+- Removed-line highlighting
+- Side-by-side diff
+- Inline diff option
+- File navigation
+- Changed-file list
+- Diff statistics
+- Previous/next change navigation
+
+### Comparison tabs
+
+**Code Diff**
+Line-by-line comparison.
+
+**Function Diff**
+Modified functions and methods.
+
+**File Tree Diff**
+Added, deleted, renamed, and modified files.
+
+**Dependency Diff**
+Changes to package manifests.
+
+**Configuration Diff**
+Changes to configuration files.
+
+**AI Semantic Diff**
+Gemma explanation of behavioral differences.
+
+### Version controls
+
+Allow:
+- Select commit A
+- Select commit B
+- Swap commits
+- Reset comparison
+- Open commit details
+- Open Infection Map
+
+### AI interpretation
+
+Gemma should explain:
+- What changed
+- Why the change matters
+- What behavior might differ
+- Which edge cases may fail
+- Which tests could verify the hypothesis
+
+Reference actual code evidence.
+
+---
+
+# 9. MODULE SIX — INFECTION MAP
+
+Build a highly interactive dependency and impact visualization using React Flow.
+
+This should be a signature visual feature.
+
+### Graph representation
+
+Nodes represent:
+- Files
+- Modules
+- Functions
+- Classes
+
+Edges represent:
+- Imports
+- Function calls when reliably detected
+- Other explicitly identified relationships
+
+### Node states
+
+Display:
+- Healthy / unchanged
+- Directly modified
+- Potentially affected
+- High-risk
+- Unknown relationship
+
+Do not represent possible impact as confirmed breakage.
+
+### Interactive graph
+
+Implement:
+- Zoom
+- Pan
+- Fit to screen
+- Search nodes
+- Click node
+- Hover details
+- Expand/collapse groups
+- Filter by module
+- Highlight dependencies
+- Highlight dependents
+- View related commits
+- Open source code
+- Open AI explanation
+
+### Infection propagation visualization
+
+When a suspicious commit is selected:
+
+1. Highlight directly modified nodes.
+2. Identify reachable dependent nodes.
+3. Animate potential propagation along dependency edges.
+4. Show affected components.
+5. Display supporting relationship evidence.
+
+### Blast Radius panel
+
+Display:
+- Modified functions
+- Direct dependencies
+- Potential downstream consumers
+- Related tests
+- Number of affected nodes
+- Impact classification
+
+### Graph legend
+
+Clearly distinguish:
+- Direct code changes
+- Static dependency relationships
+- Heuristic potential impact
+- Unknown impact
+
+### Implementation
+
+Use real relationships extracted from analyzed source files.
+
+For unsupported languages, provide a file-level graph rather than inventing function relationships.
+
+---
+
+# 10. MODULE SEVEN — GEMMA INTELLIGENCE
+
+Integrate Gemma 4 as the application's AI investigation engine.
+
+### Model integration
+
+Use Ollama through the backend.
+
+Make the endpoint and model name configurable through environment variables.
+
+Example configuration:
+
+```env
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=gemma4
+```
+
+Do not assume the model is installed or that the configured tag exists.
+
+Check model availability and display a clear connection status.
+
+Provide actionable errors if the model is unavailable.
+
+### AI assistant
+
+Create a contextual chat interface with:
+- Streaming responses
+- Conversation history
+- Markdown rendering
+- Code highlighting
+- Copy response
+- Retry
+- Stop generation
+- Suggested prompts
+- Context indicator
+
+### Context awareness
+
+Provide Gemma with:
+- Repository metadata
+- Selected commit
+- Relevant diff
+- Changed functions
+- Risk signals
+- Dependency relationships
+- User-reported symptoms
+- Relevant test results
+
+Use bounded context selection to avoid overwhelming the model.
+
+### AI capabilities
+
+Implement:
+
+**Root Cause Analysis**
+Explain likely failure mechanisms.
+
+**Semantic Diff Analysis**
+Explain behavior changes.
+
+**Impact Explanation**
+Describe potential downstream effects.
+
+**Test Generation**
+Suggest regression tests.
+
+**Fix Recommendations**
+Generate possible patches.
+
+**Alternative Hypotheses**
+Identify competing explanations.
+
+**Commit Investigation**
+Explain why a commit was flagged.
+
+**Developer Q&A**
+Answer questions grounded in the selected investigation.
+
+### Explanation modes
+
+Support:
+- Beginner
+- Developer
+- Expert
+
+### Structured AI output
+
+Use Zod schemas to validate AI-generated JSON.
+
+Include:
+- Summary
+- Observations
+- Hypotheses
+- Evidence references
+- Risk explanation
+- Suggested tests
+- Recommended actions
+- Uncertainty notes
+
+### Evidence requirements
+
+Every significant claim should reference available evidence.
+
+Do not fabricate file names, line numbers, commits, or test results.
+
+Separate observations from speculation.
+
+### AI status
+
+Display:
+- Connected
+- Loading
+- Generating
+- Unavailable
+- Error
+
+Provide graceful fallback when inference is unavailable.
+
+---
+
+# 11. MODULE EIGHT — RESTORE LAB
+
+Build a recovery workspace for reviewing proposed fixes.
+
+### Treatment recommendations
+
+Gemma can suggest:
+- Minimal patch
+- Safe revert
+- Validation restoration
+- Error-handling improvement
+- Dependency correction
+- Regression test addition
+
+### Treatment cards
+
+Each recommendation includes:
+- Title
+- Description
+- Target files
+- Rationale
+- Expected behavioral change
+- Potential risks
+- Verification requirements
+
+### Patch preview
+
+Use Monaco Diff Editor.
+
+Display:
+- Original code
+- Proposed code
+- Added lines
+- Removed lines
+
+### Treatment strategies
+
+Provide:
+
+**Minimal Intervention**
+Smallest proposed code change.
+
+**Reversal**
+Potential Git revert strategy.
+
+**Preventive Treatment**
+Additional validation or regression tests.
+
+### Actions
+
+Implement:
+- Generate patch
+- Preview patch
+- Copy patch
+- Download `.patch`
+- Generate regression test
+- View rollback guidance
+
+### Safety
+
+Do not automatically push commits or modify remote repositories.
+
+Validate patch formatting.
+
+Label untested patches as unverified.
+
+Never claim a fix works without successful verification.
+
+---
+
+# 12. MODULE NINE — INVESTIGATION REPORTS
+
+Create a complete investigation reporting workspace.
+
+### Report content
+
+Include:
+- Repository identity
+- Investigation ID
+- Date
+- Selected commit range
+- Investigation mode
+- User-reported symptoms
+- Summary
+- Risk indicators
+- Suspicious commits
+- Evidence
+- Modified files
+- Potentially affected functions
+- AI analysis
+- Alternative hypotheses
+- Suggested tests
+- Proposed fixes
+- Verification status
+- Limitations
+
+### Report UI
+
+Create:
+- Report preview
+- Collapsible sections
+- Evidence references
+- Risk badges
+- Summary cards
+- Print-friendly layout
+
+### Export
+
+Implement:
+- Markdown export
+- JSON export
+- Browser print / PDF-friendly output
+
+### Persistence
+
+Save investigation reports to SQLite.
+
+Allow users to:
+- Open previous reports
+- Rename investigations
+- Delete investigations
+- Regenerate reports
+- Download reports
+
+Do not invent findings for incomplete investigations.
+
+---
+
+# 13. MODULE TEN — REPOSITORY HEALTH
+
+Create a repository health monitoring dashboard.
+
+### Metrics
+
+Include:
+- Commit activity
+- Contributor activity
+- Code churn
+- Frequently modified files
+- Change-risk trends
+- Dependency manifest changes
+- Test-related changes
+- Configuration change frequency
+
+### Visualizations
+
+Build:
+- Commit activity chart
+- Code churn heatmap
+- Risk trend chart
+- File modification leaderboard
+- Language distribution chart
+- Contributor activity chart
+
+### Hotspot analysis
+
+Identify files with frequent modifications and elevated heuristic risk.
+
+### Test indicators
+
+Detect relevant test files and test modifications.
+
+Do not claim measured test coverage without coverage data.
+
+### Health summary
+
+Generate a concise report describing:
+- Maintenance activity
+- Change concentration
+- Potential risk hotspots
+- Testing signals
+- Areas requiring review
+
+---
+
+# 14. MODULE ELEVEN — SAVED INVESTIGATIONS
+
+Build persistent investigation management.
+
+Each saved investigation includes:
+- Unique ID
+- Repository
+- Branch
+- Commit range
+- Investigation mode
+- Status
+- Created timestamp
+- Last updated timestamp
+- Selected commits
+- Findings
+- Notes
+- Bookmarks
+- Generated reports
+
+Features:
+- Search
+- Sort
+- Filter
+- Rename
+- Reopen
+- Delete
+- Duplicate investigation
+- Resume incomplete analysis
+
+Use SQLite persistence.
+
+---
+
+# 15. MODULE TWELVE — GLOBAL UX SYSTEM
+
+Implement a complete professional interface system.
+
+### Global search
+
+Search:
+- Commits
+- Files
+- Functions
+- Findings
+- Saved investigations
+
+### Command palette
+
+Use `Ctrl/Cmd + K`.
+
+Support:
+- Navigate to module
+- Open repository
+- Search commits
+- Start investigation
+- Compare versions
+- Open AI assistant
+- Generate report
+
+### Additional components
+
+Implement:
+- Resizable panels
+- Collapsible sidebar
+- Breadcrumbs
+- Context drawers
+- Notification center
+- Tooltips
+- Filter chips
+- Loading skeletons
+- Empty states
+- Error states
+- Toast notifications
+- Progress indicators
+- Analysis logs
+- Keyboard shortcuts
+- Confirmation dialogs
+- Responsive layouts
+- Accessible interactive controls
+
+### Settings
+
+Include:
+- GitHub integration status
+- Ollama endpoint
+- Model name
+- Model connection test
+- Analysis commit limit
+- Default investigation mode
+- Animation preferences
+- Reduced-motion option
+- Data management controls
+
+### Demo mode
+
+Provide a prominent **Launch Demo Investigation** action.
+
+The demonstration must showcase:
+- Repository overview
+- Commit timeline
+- Suspicious commit
+- Code comparison
+- Infection Map
+- AI diagnosis
+- Suggested fix
+- Investigation report
+
+Demo mode should remain functional without GitHub or Ollama.
+
+When Gemma is unavailable, use clearly labeled prerecorded demo analysis rather than pretending live inference occurred.
+
+---
+
+# 16. BACKEND API DESIGN
+
+Create functional REST endpoints.
+
+Suggested routes:
+
+```text
+GET    /api/health
+GET    /api/ai/status
+
+POST   /api/repositories/import
+GET    /api/repositories/:id
+GET    /api/repositories/:id/branches
+GET    /api/repositories/:id/commits
+
+POST   /api/investigations
+GET    /api/investigations
+GET    /api/investigations/:id
+DELETE /api/investigations/:id
+
+POST   /api/investigations/:id/analyze
+GET    /api/investigations/:id/progress
+GET    /api/investigations/:id/findings
+
+GET    /api/investigations/:id/timeline
+GET    /api/investigations/:id/impact
+GET    /api/investigations/:id/health
+
+POST   /api/compare
+POST   /api/ai/analyze
+POST   /api/ai/chat
+POST   /api/ai/tests
+POST   /api/ai/fix
+
+POST   /api/reports
+GET    /api/reports/:id
+GET    /api/reports/:id/export
+```
+
+Ensure frontend actions call real backend implementations.
+
+Use Zod validation.
+
+Return consistent error objects.
+
+Handle GitHub rate limits and API failures.
+
+Use caching where appropriate.
+
+Provide meaningful progress events.
+
+---
+
+# 17. DATA MODELS
+
+Define shared TypeScript types for:
+
+```text
+Repository
+Branch
+Commit
+ChangedFile
+CodeFunction
+DependencyNode
+DependencyEdge
+RiskSignal
+RiskAssessment
+RegressionFinding
+EvidenceReference
+Investigation
+InvestigationNote
+CommitBookmark
+AIAnalysis
+TestSuggestion
+VerificationResult
+PatchSuggestion
+InvestigationReport
+RepositoryHealth
+```
+
+Every finding should maintain traceability to source evidence.
+
+Use stable IDs.
+
+Represent unknown values explicitly instead of inventing defaults.
+
+---
+
+# 18. ANALYSIS ENGINE
+
+Create a modular analysis pipeline.
+
+```text
+Repository Import
+       ↓
+Commit Retrieval
+       ↓
+Diff Extraction
+       ↓
+AST / Code Parsing
+       ↓
+Change Classification
+       ↓
+Dependency Analysis
+       ↓
+Risk Scoring
+       ↓
+Suspicious Commit Ranking
+       ↓
+Gemma Investigation
+       ↓
+Evidence Aggregation
+       ↓
+Report Generation
+```
+
+Separate deterministic findings from AI-generated interpretations.
+
+### Analysis requirements
+
+- Analyze bounded commit ranges.
+- Handle renamed and deleted files.
+- Skip unsupported binary files.
+- Avoid processing huge files without limits.
+- Handle malformed source code gracefully.
+- Preserve commit SHA and file references.
+- Cache previously analyzed results.
+- Report partial failures.
+- Support cancellation where practical.
+
+Do not invent dependency edges or AST findings.
+
+---
+
+# 19. OPEN-SOURCE REQUIREMENTS
+
+This application is being developed for an AI hackathon.
+
+The repository itself must be a high-quality open-source project.
+
+Include:
+
+- Apache-2.0 or MIT license
+- Detailed README
+- Project description
+- Feature overview
+- Architecture documentation
+- Local setup instructions
+- Environment variable examples
+- Gemma/Ollama setup instructions
+- Demo instructions
+- API documentation
+- Contributing guide
+- Screenshots section
+- Known limitations
+- Future roadmap
+
+Do not include secrets.
+
+Do not commit `.env`.
+
+Provide a working `.env.example`.
+
+---
+
+# 20. TESTING & QUALITY
+
+Add meaningful automated tests.
+
+### Unit tests
+
+Test:
+- GitHub URL parsing
+- Commit range validation
+- Diff parsing
+- Risk scoring
+- Suspicious commit ranking
+- Dependency graph construction
+- Evidence reference validation
+- Report generation
+
+### Integration tests
+
+Test:
+- Repository import
+- Investigation creation
+- Commit comparison
+- Analysis execution
+- Report persistence
+- AI response validation with mocked inference
+
+### Frontend tests
+
+Test:
+- Navigation
+- Repository import form
+- Timeline selection
+- Commit comparison
+- Investigation state synchronization
+- Demo mode
+
+Use deterministic fixtures.
+
+Add linting and TypeScript type checking.
+
+No hardcoded credentials.
+
+No silent error swallowing.
+
+---
+
+# 21. IMPLEMENTATION STRATEGY
+
+Build the application incrementally, but complete the integrated product.
+
+### Phase 1 — Foundation
+
+Set up:
+- Monorepo
+- Frontend
+- Backend
+- Shared types
+- Routing
+- Database
+- Design system
+- Application shell
+
+### Phase 2 — Core GitHub Workflow
+
+Implement:
+- Repository import
+- Commit retrieval
+- Commit timeline
+- Commit details
+- Diff comparison
+
+### Phase 3 — Deterministic Intelligence
+
+Implement:
+- Change analysis
+- Risk scoring
+- Suspicious commit ranking
+- Dependency graph
+- Infection Map
+
+### Phase 4 — Gemma Integration
+
+Implement:
+- Ollama connection
+- Context construction
+- AI diagnosis
+- Semantic diff
+- Test suggestions
+- Fix recommendations
+- AI assistant
+
+### Phase 5 — Recovery & Reporting
+
+Implement:
+- Restore Lab
+- Patch preview
+- Report generation
+- Saved investigations
+- Repository Health
+
+### Phase 6 — Product Polish
+
+Implement:
+- Animations
+- Loading states
+- Error handling
+- Responsive behavior
+- Keyboard shortcuts
+- Demo experience
+- Documentation
+
+### Phase 7 — Verification
+
+Run:
+- TypeScript checks
+- Lint
+- Tests
+- Production build
+
+Fix errors before declaring completion.
+
+---
+
+# 22. CRITICAL ENGINEERING RULES
+
+1. Build real functionality, not decorative placeholders.
+2. Do not fabricate repository data.
+3. Do not fabricate AI responses.
+4. Clearly label simulated demo content.
+5. Use actual GitHub API responses for live repository analysis.
+6. Keep API keys and tokens server-side.
+7. Never execute arbitrary repository code on the host.
+8. Do not treat AI hypotheses as verified regressions.
+9. Do not claim generated patches are tested unless they are.
+10. Preserve evidence references throughout the investigation.
+11. Handle missing services gracefully.
+12. Use reusable components and modular architecture.
+13. Keep the interface responsive during analysis.
+14. Prefer a working vertical slice over many disconnected mock screens.
+15. Do not leave visible buttons without implemented behavior.
+16. Do not use generic placeholder charts or random metrics.
+17. Do not make remote repository modifications.
+18. Keep all user-facing states consistent across modules.
+19. Use clear loading, empty, success, and error states.
+20. Make the application impressive without compromising technical credibility.
+
+---
+
+# 23. EXPECTED FINAL EXPERIENCE
+
+A user should be able to:
+
+1. Open CODE ZERO.
+2. See an advanced biomedical diagnostic interface.
+3. Enter a GitHub repository URL.
+4. Import real repository metadata.
+5. Choose a branch and commit range.
+6. Launch a regression investigation.
+7. Explore commits on an interactive timeline.
+8. Identify suspicious commits through transparent risk scoring.
+9. Select a suspected Patient Zero.
+10. Compare working and broken code.
+11. Inspect the Infection Map.
+12. Ask Gemma why the change may have caused a regression.
+13. Review AI-generated evidence-based hypotheses.
+14. Generate suggested regression tests.
+15. Preview a proposed fix.
+16. Save the investigation.
+17. Export a complete report.
+18. Return later and resume the investigation.
+
+The entire experience must feel cohesive, interactive, polished, and useful to real developers.
+
+---
+
+# 24. START BUILDING NOW
+
+First inspect the existing project structure and preserve any working code.
+
+Then:
+
+1. Establish the architecture.
+2. Create the design system.
+3. Implement the complete application shell.
+4. Build the repository import and commit analysis workflow.
+5. Connect the major investigation modules.
+6. Integrate Gemma through the backend.
+7. Implement reporting and persistence.
+8. Add the remaining dashboard features.
+9. Create a reliable offline demo.
+10. Run the application and verify the core user journey.
+
+Do not stop after generating a landing page or a collection of UI components.
+
+Do not replace actual features with fake data except inside explicitly labeled demo mode.
+
+If time or execution limits prevent completing everything, prioritize the working investigation flow, clearly document what remains incomplete, and continue implementing the next highest-priority functionality.
+
+At completion, provide:
+
+- Implemented features
+- Project structure
+- Installation commands
+- Required environment variables
+- How to start frontend and backend
+- How to connect Gemma 4
+- How to launch the demo
+- Test results
+- Known limitations
+- Remaining work
+
+## FINAL PRODUCT GOAL
+
+Build **CODE ZERO — Find Patient Zero in Your Codebase**.
+
+An open-source, AI-powered software regression investigation platform where Git history becomes a diagnostic timeline, suspicious commits become mutations, dependency relationships reveal potential infection paths, Gemma acts as an intelligent diagnostic assistant, and proposed fixes become treatments.
+
+Make it visually unforgettable, technically credible, genuinely functional, and ready for a live hackathon demonstration.

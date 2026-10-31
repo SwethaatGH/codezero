@@ -1,0 +1,34 @@
+{
+  "name": "code-zero",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CODE ZERO — Find Patient Zero in Your Codebase. AI-powered regression investigation with Gemma 4.",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c green,cyan \"npm run dev -w @code-zero/api\" \"npm run dev -w @code-zero/web\"",
+    "build": "npm run build -w @code-zero/web",
+    "start": "npm run start -w @code-zero/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.19.0",
+    "vitest": "^3.0.5",
+    "light-my-request": "6.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

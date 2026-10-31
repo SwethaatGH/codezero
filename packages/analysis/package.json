@@ -1,0 +1,11 @@
+{
+  "name": "@code-zero/analysis",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": { "typecheck": "tsc --noEmit -p .", "test": "vitest run" },
+  "dependencies": { "@code-zero/shared": "0.1.0", "diff": "^7.0.0", "typescript": "~5.7.2" },
+  "devDependencies": { "@types/diff": "^7.0.0" }
+}
