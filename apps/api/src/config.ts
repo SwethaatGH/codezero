@@ -30,6 +30,10 @@ export const env = {
   maxParseFilesPerCommit: Number(process.env.MAX_PARSE_FILES_PER_COMMIT ?? 8),
   maxFileBytes: Number(process.env.MAX_FILE_BYTES ?? 300_000),
   aiTimeoutMs: Number(process.env.AI_TIMEOUT_MS ?? 120_000),
+  /** Built web app to serve from the API (single-server deploys). Unset in dev, where Vite serves it. */
+  webDistPath: process.env.WEB_DIST_PATH ? resolve(REPO_ROOT, process.env.WEB_DIST_PATH) : null,
+  /** Public deployments: settings and data-clearing endpoints are read-only so visitors cannot change or wipe the server. */
+  publicDemo: process.env.PUBLIC_DEMO === "true",
 };
 
 export const defaultSettings: RuntimeSettings = {

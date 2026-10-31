@@ -14,7 +14,7 @@ export class ApiError extends Error {
 
 export const notFound = (what: string) => new ApiError(404, "NOT_FOUND", `${what} not found`);
 
-export function registerErrorHandler(app: FastifyInstance) {
+export function registerErrorHandler(app: FastifyInstance, opts: { spaFallback?: boolean } = {}) {
   app.setErrorHandler((err: FastifyError | ApiError | ZodError, req, reply) => {
     if (err instanceof ZodError) {
       return reply.status(400).send({ error: { code: "VALIDATION_ERROR", message: err.issues.map((i) => `${i.path.join(".") || "body"}: ${i.message}`).join("; "), details: err.issues } });
@@ -26,5 +26,9 @@ export function registerErrorHandler(app: FastifyInstance) {
     if (status >= 500) req.log.error(err);
     return reply.status(status).send({ error: { code: (err as FastifyError).code ?? "INTERNAL_ERROR", message: status >= 500 ? `Internal error: ${err.message}` : err.message } });
   });
-  app.setNotFoundHandler((req, reply) => reply.status(404).send({ error: { code: "NOT_FOUND", message: `Route ${req.method} ${req.url} not found` } }));
+  app.setNotFoundHandler((req, reply) => {
+    // When serving the built web app, client-side routes fall back to index.html; /api stays JSON.
+    if (opts.spaFallback && req.method === "GET" && !req.url.startsWith("/api/")) return reply.sendFile("index.html");
+    return reply.status(404).send({ error: { code: "NOT_FOUND", message: `Route ${req.method} ${req.url} not found` } });
+  });
 }

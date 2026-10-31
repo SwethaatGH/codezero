@@ -130,6 +130,10 @@ Stacked coupons can then push totals negative. Several realistic decoys are mixe
 
 The demo needs neither GitHub nor Gemma. Its diffs are generated from file snapshots, so every patch, line number and score stays internally consistent. A deterministic harness bisects the history and confirms the regression. See [`demo/README.md`](demo/README.md).
 
+### Deploying
+
+`render.yaml` is a [Render](https://render.com) Blueprint for a single free web service: in Render choose **New → Blueprint** and pick this repository. In production the API also serves the built web app (`WEB_DIST_PATH`), and `PUBLIC_DEMO=true` makes settings and data clearing read-only so visitors cannot change or wipe the server. Free instances sleep when idle and have no persistent disk, so saved investigations reset on restart; the demo always works. Add `GEMINI_API_KEY` in the Render dashboard for live Gemma, knowing every visitor's requests count against your quota.
+
 ---
 
 ## Architecture

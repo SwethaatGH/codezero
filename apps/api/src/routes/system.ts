@@ -18,8 +18,16 @@ const settingsSchema = z.object({
   defaultMode: z.enum(["quick-scan", "regression-hunt", "single-commit", "exploration", "ai-guided"]).optional(),
 });
 
+/** Writes a public visitor must not make: changing server settings (incl. the Ollama URL it fetches) or wiping all data. */
+const PUBLIC_DEMO_LOCKED = new Set(["PUT /api/settings", "POST /api/settings/reset", "POST /api/data/clear"]);
+
 export function registerSystemRoutes(app: FastifyInstance, db: DB) {
-  app.get("/api/health", async () => ({ ok: true, version: "0.1.0", time: new Date().toISOString() }));
+  app.get("/api/health", async () => ({ ok: true, version: "0.1.0", time: new Date().toISOString(), publicDemo: env.publicDemo }));
+  app.addHook("preHandler", async (req) => {
+    if (env.publicDemo && PUBLIC_DEMO_LOCKED.has(`${req.method} ${req.routeOptions.url}`)) {
+      throw new ApiError(403, "PUBLIC_DEMO", "Settings and data clearing are disabled on this public demo. Run CODE ZERO locally to change them.");
+    }
+  });
 
   app.get("/api/settings", async () => ({ ...db.getSettings(), githubTokenConfigured: !!env.githubToken, geminiKeyConfigured: !!env.geminiApiKey }));
   app.put("/api/settings", async (req) => {
